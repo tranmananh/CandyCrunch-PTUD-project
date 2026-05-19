@@ -1,0 +1,118 @@
+/* ================================================
+   OVERLAY 
+   ================================================ */
+.wishlist-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9998;
+    /*display: none;*/
+}
+
+.wishlist-overlay .cart-panel {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+}
+
+.wishlist-overlay.active {
+    display: block;
+}
+
+/* Ẩn popup */
+.hidden {
+    display: none !important;
+}
+
+.wishlist-product-item {
+    display: flex;
+    padding-bottom: 12px;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    border-bottom: 1px solid var(--gray-300);
+    flex-shrink: 0;
+}
+
+
+.wishlist-product-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-image {
+    display: block;
+    aspect-ratio: 1/1;
+    border-radius: var(--border-radius-12);
+    width: 110px;
+    height: 110px;
+}
+
+.wishlist-product-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+    align-self: stretch;
+    min-width: 60px;
+    padding: 20px 0;
+}
+
+.wishlist-add {
+    display: flex;
+    padding: var(--spacing-8);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid var(--primary-button-pressed-border);
+    background: var(--primary-button-outline-background);
+}
+
+@media (max-width: 1200px) {
+    .wishlist-product-item {
+        gap: var(--spacing-16);
+        padding-bottom: var(--spacing-16);
+    }
+
+    .wishlist-upsell-image {
+        width: 96px;
+        height: 96px;
+    }
+
+    .wishlist-product-right {
+        gap: 45px;
+    }
+
+    .wishlist-add {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wishlist-product-item {
+        gap: var(--spacing-16);
+        padding-bottom: var(--spacing-16);
+        height: 130px;
+    }
+
+    /* LEFT */
+    .wishlist-product-left {
+        align-items: flex-start;
+    }
+
+    /* RIGHT */
+    .wishlist-product-right {
+        gap: 50px;
+    }
+
+    .wishlist-add {
+        padding: 6px;
+    }
+
+    .wishlist-upsell-image {
+        width: 115px;
+        height: 115px;
+    }
+}

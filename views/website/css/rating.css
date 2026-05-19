@@ -1,0 +1,168 @@
+/* ================================================
+   RESET STYLES 
+   ================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rating-title {
+    color: var(--green-500);
+    font: var(--heading-3);
+    text-align: center;
+}
+
+/* Overlay xám */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ẩn popup 
+.hidden {
+    display: none;
+}
+  
+/* Popup box */
+.rating-popup {
+    width: calc(100%/5*2);
+    max-width: 90%;
+    border-radius: 8px;
+    padding: 24px;
+    position: relative;
+    animation: fadeIn 0.25s ease;
+    border-radius: var(--border-radius-8, 8px);
+    background: var(--body-background, #F8F5EE);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.rating-desc {
+    color: #000;
+    text-align: center;
+    font: var(--body-regular);
+    padding: 10px 10px;
+}
+
+/* Sản phẩm 
+.product-info-rating {
+  margin-bottom: 16px;
+}
+
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937; /* xám đậm */
+
+
+/*Rating
+.rating-wrapper {
+  margin-bottom: 20px;
+}
+
+.rating-label {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}*/
+
+.star-rating {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.star {
+    font-size: 50px;
+    color: #d1d5db;
+    /* sao xám */
+    transition: color 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Sao được chọn */
+.star.active {
+    color: #fbbf24;
+    /* vàng */
+}
+
+/* Hover - highlight all stars up to hovered one */
+.star:hover {
+    color: #fbbf24;
+}
+
+@media (max-width: 768px) {
+    .rating-popup {
+        width: calc(100%/3*2);
+    }
+}
+
+/* Form Element Styles */
+.rating-popup select,
+.rating-popup textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--gray-300, #d1d5db);
+    border-radius: 8px;
+    background: #fff;
+    font: var(--body-regular);
+    color: #000;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating-popup select:focus,
+.rating-popup textarea:focus {
+    border-color: var(--green-500, #0d8f78);
+    box-shadow: 0 0 0 3px rgba(13, 143, 120, 0.15);
+}
+
+.rating-popup select {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-right: 40px;
+}
+
+.rating-popup textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.rating-popup .input-field {
+    width: 100%;
+}
+
+.rating-popup .input {
+    width: 100%;
+}

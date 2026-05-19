@@ -1,0 +1,275 @@
+<?php
+$ROOT = '/Candy-Crunch-Website';
+include('../../../partials/header.php');
+$uri = $_SERVER['REQUEST_URI'];
+$path = parse_url($uri, PHP_URL_PATH);
+$file = basename($path);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- Preload Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!-- Welcome section -->
+    <section class="welcome-section">
+        <div class="welcome-overlay">
+            <div class="welcome-content">
+                <h1>Welcome to<br>Candy Crunch</h1>
+    
+                <p>
+                    Your destination for joyful, crunchy treats crafted to brighten every moment.
+                    Here, every bite is made to lift your mood and add a spark of fun to your day.
+                </p>
+    
+                <a href="shop.php" class="cta-btn">EXPLORE NOW</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Story section -->
+    <section id="story-section" class="story-section">
+        <div class="story-container">
+            <!-- LEFT: TEXT -->
+            <div class="story-left">
+                <div class="story-title">Our Story</div>
+                <div class="story-subtitle">The History & Journey of Candy Crunch</div>
+                <div class="story-description">
+                    Our founder grew up around handcrafted street candies that weren’t perfect,
+                    but always carried a sense of innocence and laughter. Years later, in a market
+                    filled with industrial products, that feeling was gone. The absence of emotional
+                    delight inspired the creation of Candy Crunch — a brand designed to bring back
+                    the small, vibrant moments of happiness a single candy can create.
+                </div>
+            </div>
+
+            <!-- RIGHT: IMAGE -->
+            <div class="story-right">
+                <img src="../img/about_story.jpg" alt="Candy Crunch Story">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mission section -->
+    <section class="mission-section">
+        <!-- Màu background -->
+        <div class="mission-bg">
+            <div class="left-bg"></div>
+            <div class="right-bg"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="mission-container">
+            <!-- Vision -->
+            <div class="vision">
+                <h2>Vision</h2>
+                <p>
+                    To become the most joy-inspiring candy brand in Asia, where every “crunch”
+                    is not just a sound but a spark of laughter, relaxation, and happy memories.
+                </p>
+            </div>
+            <!-- Candy Image -->
+            <div class="candy-image">
+                <img src="../img/about_mission.png" alt="Candy lolipop">
+            </div>
+            <!-- Mission -->
+            <div class="mission">
+                <h2>Mission</h2>
+                <p>
+                    To craft joyful, high-quality crunchy candies that lift your mood, spark
+                    playful moments, and brighten everyday life through simple ingredients,
+                    a spirit of fun.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <!-- Title -->
+        <div class="timeline-title">
+            <h2 class="line-1">
+                <span class="candy">Candy</span>
+                <span class="crunch">Crunch</span>
+            </h2>
+            <h3 class="line-2">Throughout the Years</h3>
+        </div>
+    
+        <!-- Timeline Scroll Wrapper -->
+        <div class="timeline-wrapper">
+            <div class="timeline-scroll no-wrap">
+    
+                <!-- 2019 -->
+                <div class="timeline-card yellow">
+                    <img class="timeline-image" src="../img/about_time_yellow.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2019</h4>
+                        <h5>Birth of the Concept</h5>
+                        <p>Our founder began experimenting with crunchy candy at home, aiming to create a joyful “crunch” that brightens someone’s day.</p>
+                    </div>
+                </div>
+    
+                <!-- 2020 -->
+                <div class="timeline-card green">
+                    <img class="timeline-image" src="../img/about_time_green.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2020</h4>
+                        <h5>The First Successful Batch</h5>
+                        <p>After many attempts, two signature flavors emerged: Grape Pop and Strawberry Burst. Family and friends loved them instantly.</p>
+                    </div>
+                </div>
+    
+                <!-- 2021 -->
+                <div class="timeline-card pink">
+                    <img class="timeline-image" src="../img/about_time_pink.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2021</h4>
+                        <h5>“Candy Crunch” Gets Its Name</h5>
+                        <p>The name was chosen to reflect the core experience — the crunch. The first logo was hand-drawn, marking the official beginning.</p>
+                    </div>
+                </div>
+    
+                <!-- 2022 -->
+                <div class="timeline-card purple">
+                    <img class="timeline-image" src="../img/about_time_purple.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2022</h4>
+                        <h5>Launching to Customers</h5>
+                        <p>Candy Crunch started selling online. 80% of first-month orders came from WOM, proving emotional connection was key.</p>
+                    </div>
+                </div>
+    
+                <!-- 2023 -->
+                <div class="timeline-card yellow">
+                    <img class="timeline-image" src="../img/about_time_yellow.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2023</h4>
+                        <h5>Expanding the Flavor World</h5>
+                        <p>More youthful, bold flavors were introduced. Candy Crunch began building a small community centered around “moments of joy.”</p>
+                    </div>
+                </div>
+    
+                <!-- 2024 -->
+                <div class="timeline-card green">
+                    <img class="timeline-image" src="../img/about_time_green.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2024</h4>
+                        <h5>Brand Foundation Strengthened</h5>
+                        <p>The visual identity evolved, formulas were refined, and small-scale production was standardized for consistent quality.</p>
+                    </div>
+                </div>
+    
+                <!-- 2025 -->
+                <div class="timeline-card pink">
+                    <img class="timeline-image" src="../img/about_time_pink.png" alt="">
+                    <div class="timeline-content">
+                        <h4>2025</h4>
+                        <h5>Entering Growth Phase</h5>
+                        <p>Candy Crunch shifted from “selling candy” to “creating an emotional experience,” aiming to be Asia’s most joy-inspiring candy brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team section -->
+    <section class="team-section">
+        <h1 class="team-title">Meet our Team</h1>
+    
+        <div class="team-container">
+            <!-- CARD 1 -->
+            <div class="team-card open" data-card="1" style="--card-color: var(--yellow-100);">
+                <div class="team-closed">
+                    <span>Founder & Chief Product Creator</span>
+                </div>
+    
+                <div class="team-open">
+                    <img src="../img/about_mem1.jpg" alt="">
+                    <div class="team-info">
+                        <h3>Alex Nguyen</h3>
+                        <p><strong>Founder & Chief Product Creator</strong></p>
+                        <p><strong>Role:</strong> Product Innovation, Brand Direction</p>
+                        <p><strong>Background:</strong> Former food-technology researcher with a passion for nostalgic confectionery.</p>
+                        <p><strong>Strengths:</strong> Recipe development, sensory design, emotional branding.</p>
+                        <p>Alex is the mind behind the first “crunch formula,” mixing childhood inspiration with modern food-science precision</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CARD 2 -->
+            <div class="team-card" data-card="2" style="--card-color: var(--teal-100);">
+                <div class="team-closed">
+                    <span>Head of Brand & Creative</span>
+                </div>
+                <div class="team-open">
+                    <img src="../img/about_mem2.png" alt="">
+                    <div class="team-info">
+                        <h3>Mia Le</h3>
+                        <p><strong>Head of Brand & Creative</strong></p>
+                        <p><strong>Role:</strong> Brand storytelling, visual identity, flavor naming.</p>
+                        <p><strong>Background:</strong> Creative strategist with 7+ years in FMCG branding.</p>
+                        <p><strong>Strengths:</strong> Brand narrative design, packaging aesthetics, consumer psychology.</p>
+                        <p>Mia transforms every Candy Crunch flavor into a character, emotion, and shareable experience.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CARD 3 -->
+            <div class="team-card" data-card="3" style="--card-color: var(--pink-100);">
+                <div class="team-closed">
+                    <span>Operations & Quality Manager</span>
+                </div>
+                <div class="team-open">
+                    <img src="../img/about_mem3.jpg" alt="">
+                    <div class="team-info">
+                        <h3>Joelina Tran</h3>
+                        <p><strong>Operations & Quality Manager</strong></p>
+                        <p><strong>Role:</strong> Production oversight, quality control, supply-chain coordination.</p>
+                        <p><strong>Background:</strong> Industrial engineer specializing in micro-batch confectionery lines.</p>
+                        <p><strong>Strengths:</strong> Process optimization, food safety systems, scalability planning.</p>
+                        <p>Joelina ensures each “crunch layer” meets the exact standard that defines Candy Crunch.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- CARD 4 -->
+            <div class="team-card" data-card="4" style="--card-color: var(--purple-100);">
+                <div class="team-closed">
+                    <span>Marketing & Community Lead</span>
+                </div>
+                <div class="team-open">
+                    <img src="../img/about_mem4.jpg" alt="">
+                    <div class="team-info">
+                        <h3>Lily Ho</h3>
+                        <p><strong>Marketing & Community Lead</strong></p>
+                        <p><strong>Role:</strong> Social media engagement, community building, customer insights.</p>
+                        <p><strong>Background:</strong> Digital marketing specialist with strong experience in youth-driven brands.</p>
+                        <p><strong>Strengths:</strong> Community engagement, viral content strategy, consumer sentiment tracking.</p>
+                        <P>Lily turns Candy Crunch into a lifestyle — not just a candy.</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Script -->
+    <script src="../js/main.js"></script>
+    <script src="../js/about.js"></script>
+
+</body>
+</html>
+
+<?php
+
+include __DIR__ . '/../../../partials/footer_kovid.php';
+?>

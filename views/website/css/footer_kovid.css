@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+.footer {
+  width: 100%;
+  padding: var(--spacing-48) var(--spacing-120);
+  position: relative;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-64);
+  overflow: hidden;
+  background-color: var(--green-500);
+  justify-content: center;
+  margin-top: auto;
+}
+.footer-top, .brand-title, .footer-bottom .footer-content {
+  width: 100%;
+  margin: 0 auto; /* Đảm bảo căn giữa */
+}
+/* ======================================================
+   FOOTER CONTENT 
+====================================================== */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-48);
+  position: relative;
+  z-index: 2; 
+}
+
+/* ======================================================
+   FOOTER TOP SECTION
+====================================================== */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-48);
+}
+
+/* ======================================================
+   NEWSLETTER SECTION
+====================================================== */
+.newsletter-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+}
+
+.newsletter-text {
+  max-width: 438px;
+  color: var(--text-white);
+  font: var(--body-large-medium);
+  margin: 0;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  padding: var(--spacing-12);
+  background: white;
+  border-radius: var(--spacing-8);
+}
+
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font: var(--body-regular);
+  color: var(--text-black);
+}
+
+.email-input::placeholder {
+  color: var(--gray-400);
+}
+
+.submit-btn {
+  width: 40px;
+  height: 40px;
+  padding: var(--spacing-8);
+  background: var(--primary-button-default-background);
+  border: none;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: var(--primary-button-hover-background);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(1, 126, 106, 0.3);
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+}
+
+.submit-icon {
+  width: var(--spacing-24);
+  height: var(--spacing-24);
+  color: var(--text-white);
+  stroke: var(--text-white);
+}
+
+/* ======================================================
+   LINKS GRID
+====================================================== */
+.links-grid {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-48);
+  max-width: 50%;
+}
+
+.link-column {
+  padding-left: var(--spacing-16);
+  border-left: 2px solid var(--teal-50);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+}
+
+.link-item {
+  color: var(--text-white);
+  font: var(--body-medium);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: inline-block;
+  width: fit-content;
+  position: relative;
+  padding: var(--spacing-4) 0;
+  cursor: pointer;
+}
+.link-column.contact-info {
+  padding-left: 0;
+  border-left: none;
+  max-width: 250px;
+}
+.link-item.column-title {
+  font: var(--body-semibold);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  cursor: default;
+  padding: 0;
+  margin-bottom: var(--spacing-4);
+}
+.link-column.link-column.contact-info .contact-detail {
+  color: var(--text-white);
+  font: var(--caption-regular);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Hover effect với underline animation */
+.link-item:hover {
+  color: var(--green-100);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  transform: translateX(var(--spacing-8));
+}
+
+/* Active/Click effect */
+.link-item:active {
+  transform: translateX(var(--spacing-8)) scale(0.95);
+}
+
+/* Font size variation for columns 2 and 3 */
+.link-column:nth-child(2) .link-item,
+.link-column:nth-child(3) .link-item {
+  font: var(--body-large-medium);
+}
+
+/* ======================================================
+   BRAND TITLE
+====================================================== */
+.brand-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-text {
+  font-family: var(--font-heading);
+  font-size: 168px;
+  font-weight: 400;
+  line-height: 150px;
+  text-align: center;
+  color: var(--text-white);
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+/* ======================================================
+   FOOTER BOTTOM
+====================================================== */
+.footer-bottom {
+  width: 100%;
+  max-width: 1186px;
+  padding: var(--spacing-16) 0;
+  border-top: 1px solid rgba(250, 250, 250, 0.80);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.copyright-text {
+  color: rgba(250, 250, 250, 0.80);
+  font: var(--footnote-regular);
+  margin: 0;
+}
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+/* Desktop - 993px to 1200px */
+@media (max-width: 1200px) {
+  .footer {
+    padding: var(--spacing-48) var(--spacing-60);
+  }
+  .links-grid {
+    gap: var(--spacing-32);
+  }
+  .newsletter-text {
+    font: var(--body-regular);
+  }
+  .email-input {
+    font: var(--body-regular);
+  }
+  .link-item {
+    font: var(--footnote-regular);
+  }
+  .link-item.column-title {
+    font: var(--body-semibold);
+  }
+  .link-column.contact-info .contact-detail {
+    font: var(--caption-regular);
+  }
+
+  .brand-text {
+    font-size: 120px;
+    line-height: 110px;
+  }
+  .copyright-text {
+    font: var(--caption-regular);
+  }
+}
+
+
+/* Mobile Large - 481px to 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-32) var(--spacing-16);
+    gap: var(--spacing-40);
+  }
+
+  .footer-content {
+    gap: var(--spacing-32);
+  }
+
+  .footer-top {
+    gap: var(--spacing-24);
+  }
+
+  .newsletter-section {
+    width: 100%;
+    gap: var(--spacing-16);
+  }
+  .links-grid {
+    width: 100%;
+    flex-direction: column;
+    gap: var(--spacing-24);
+  }
+  .newsletter-text {
+    font: var(--small-regular);
+  }
+  .newsletter-form {
+    padding: var(--spacing-8);
+  }
+
+  .email-input {
+    font: var(--small-regular);
+  }
+  .link-item {
+    font: var(--small-regular);
+  }
+  .link-item.link-item.column-title {
+    font: var(--footnote-semibold);
+    margin-bottom: var(--spacing-8);
+  }
+  .link-column.contact-detail .contact-info{
+    font: var(--small-regular);
+  }
+  .brand-text {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 2px;;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12) 0;
+  }
+  .copyright-text {
+    font: var(--small-regular);
+  }
+
+}
