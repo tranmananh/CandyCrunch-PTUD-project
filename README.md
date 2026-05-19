@@ -1,6 +1,3 @@
-# Candy-Crunch-Website
-
-
 # Project: Candy Crunch – E-commerce Website
 
 **Group: H – Implementation**
@@ -138,13 +135,6 @@ http://localhost/candy_crunch/web_user/login_user.php
 > Note: URLs may vary depending on your local folder name.
 
 ---------------------------------------------End-----------------------------------------
-
----
-
-## Contact Us
-
-**Gmail:** [levungocgiang@gmail.com](mailto:levungocgiang@gmail.com)
-**University:** UEH – University of Economics Ho Chi Minh City
 
 ---
 
